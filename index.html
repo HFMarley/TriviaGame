@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soccer Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <strong>The Soccer Trivia Game</strong>
+            </h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <h5 class="card-header">Time Remaining</h5>
+                    <div id="timer" class="card-body"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form id="target" action="destination.html">
+                    <div class="card">
+                        <h5 class="card-header text-center">Which player has scored the most goals ever in the UEFA Champions League?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Lionel Messi
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1"> 
+                                        Thierry Henry  
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Cristiano Ronaldo
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Wayne Rooney
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Which soccer club has the most UEFA Champions League titles?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Real Madrid
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Manchester United
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        FC Barcelona
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        AC Milan
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Which Player has the most assists ever in the UEFA Champions League?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Ryan Giggs
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Lionel Messi
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Cristiano Ronaldo
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      Zlatan Ibrahimovic  
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Which nation has the most Womens World Cup titles?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Brazil
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Japan
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Germany
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        United States
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Of the following four players, which is the only player who has ever scored a hat trick in a World Cup final?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Pele
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                       Carli Lloyd 
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Diego Maradona
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Abby Wambach
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Which player has scored the most goals ever in international soccer matches?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Marta
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Abby Wambach
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Carli Lloyd
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Mia Hamm
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">How many World Cup titles has the US Womens team acheived?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        three
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        one
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        two
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        five
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Who scored the infamous "hand of God" goal in the World Cup?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        David Beckham
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Zinedine Zidane
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Pele 
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Diego Maradona 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Which soccer player is known for head-butting another player in the final minutes of the 2006 World Cup final?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Zlatan Ibrahimovic
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Marco Materazzi
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Zinedine Zidane
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Andrea Pirlo
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-header text-center">Youngest player to ever score in a World Cup Final?</h5>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Pele
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Kylian Mbappe
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Cristiano Ronaldo
+                                    </label>
+                                </div>
+                                <div class="input-group col-md-3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Lionel Messi
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit-Answers"></form>
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
