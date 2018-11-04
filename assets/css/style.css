@@ -1,0 +1,59 @@
+.buttons, .restart-button {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 36px;
+    color: black;
+  }
+
+.row {
+    text-align: center;
+    display: inline-block;
+    font-size: 36px;
+    color: #42f456;
+    margin: 0px;
+}   
+
+.choice {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* font-size: 10px; */
+    /* background-color: green; */
+  }
+
+.wallpaper { 
+    background-image:url(../images/UEFA.png);   
+    /* background-color: white; 
+    background-blend-mode: soft-light; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1 {
+    font-size: 64px;
+}
+
+.start, .restart {
+    color: white;
+    background-color: #42f456;
+    border: 2px, solid;
+}
+
+/* .screen {
+    width: 200px;
+    height: 200px;
+} */
+
+#win{
+    width: 300px;
+    height: 200px;
+}
+#lose{
+    width: 300px;
+    height: 200px;
+}
+#end{
+    width: 300px;
+    height: 200px;
+}
